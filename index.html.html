@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+    <title>Nas Trilhas do Piemonte | Ecoturismo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuração de cores personalizadas do Tailwind para tons de natureza -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'eco-green': '#2F4F4F',
+                        'eco-light': '#E8F5E9',
+                        'eco-earth': '#8D6E63',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Fonte Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb;
+        }
+        /* Proporção responsiva para os vídeos (16:9) */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Header / Navbar Simples -->
+    <header class="bg-eco-green text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-tight">Nas Trilhas do Piemonte</h1>
+            <nav class="text-sm font-medium space-x-4">
+                <a href="#sobre" class="hover:text-green-300 transition">Sobre</a>
+                <a href="#trilhas" class="hover:text-green-300 transition">Roteiros</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero (Destaque Principal) -->
+    <section id="sobre" class="bg-eco-light py-12 px-4 text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-eco-green mb-4">Descubra a Chapada Norte</h2>
+            <p class="text-lg text-gray-600 mb-6">
+                Conheça as potencialidades e o rico ecoturismo do Piemonte Norte da Chapada. 
+                Prepare sua mochila e venha se conectar com a natureza.
+            </p>
+            <a href="#trilhas" class="inline-block bg-eco-green text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-green-800 transition duration-300">
+                Ver Trilhas
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção de Trilhas -->
+    <main id="trilhas" class="max-w-4xl mx-auto px-4 py-12">
+        <h3 class="text-2xl font-bold text-gray-800 mb-8 border-b-2 border-green-200 pb-2">Destinos em Destaque</h3>
+
+       <!-- Trilha 1: Monte Tabor -->
+        <article class="bg-white rounded-2xl shadow-lg overflow-hidden mb-10 border border-gray-100">
+            
+            <!-- Carrossel de Mídias (1 Foto e 2 Vídeos) -->
+            <div class="flex overflow-x-auto snap-x snap-mandatory bg-gray-900">
+                                            
+                    <!-- Mídia 2: Vídeo -->
+                <div class="snap-center shrink-0 w-full h-64 relative">
+                    <video controls class="w-full h-full object-cover">
+                        <source src="DJI_20260112044834_0020_D.MP4" type="video/mp4">
+                        Seu navegador não suporta a exibição de vídeos.
+                    </video>
+                    </div>
+
+                       <!-- Mídia 1: Fotografia -->
+                <div class="snap-center shrink-0 w-full h-64 relative">
+                    <img src="Captura de tela 2026-11-14 095509.png" alt="Paisagem | Monte Tabor" class="w-full h-full object-cover">
+                                </div>
+                
+            </div>
+            <!-- Dica visual para o usuário saber que pode arrastar -->
+            <div class="bg-gray-100 text-center text-xs text-gray-500 py-1 border-b border-gray-200">
+                Deslize para ver mais mídias ↔
+            </div>
+            
+            <div class="p-6">
+                <div class="flex items-center space-x-2 text-sm text-eco-earth font-semibold mb-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    <span>Senhor do Bonfim, BA</span>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Monte Tabor</h4>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                    Com mirantes que proporcionam vistas panorâmicas da Chapada Norte, este roteiro mistura aventura e história. Uma subida com nível moderado de dificuldade que recompensa o trilheiro com um pôr do sol inesquecível.
+                </p>
+
+                <!-- Botões de Ação (Rotas) -->
+                <div class="flex flex-col sm:flex-row gap-3 mt-4">
+                    <a href="https://www.google.com/maps/place/Monte+Tabor,+Senhor+do+Bonfim-BA/@-10.5173915,-40.2483303,17z/data=!3m1!4b1!4m6!3m5!1s0x76d5dd615427c83:0xd73f3697f6c21d7d!8m2!3d-10.5173915!4d-40.2483303!16s%2Fg%2F11tx50wvq8?entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="flex-1 flex justify-center items-center bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-xl font-medium transition shadow-sm">
+                        🚗 Como Chegar (Maps)
+                    </a>
+                    <a href="https://pt.wikiloc.com/trilhas-trekking/trail-107948271" target="_blank" class="flex-1 flex justify-center items-center bg-orange-500 hover:bg-orange-600 text-white py-3 px-4 rounded-xl font-medium transition shadow-sm">
+                        🥾 Rota a Pé (Wikiloc)
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Trilha 2: Gado Bravo -->
+        <article class="bg-white rounded-2xl shadow-lg overflow-hidden mb-10 border border-gray-100">
+            
+            <!-- Carrossel de Mídias (1 Foto e 2 Vídeos) -->
+            <div class="flex overflow-x-auto snap-x snap-mandatory bg-gray-900">
+                                            
+                                   <!-- Mídia 1: Fotografia -->
+                <div class="snap-center shrink-0 w-full h-64 relative">
+                    <img src="GadoQueda.jpg" alt="Gado Bravo" class="w-full h-full object-cover">
+                                </div>
+                  <!-- Mídia 2: Fotografia -->
+                <div class="snap-center shrink-0 w-full h-64 relative">
+                    <img src="Gado Bravo2.jpg" alt="Gado Bravo" class="w-full h-full object-cover">
+                                </div>
+                                  <!--0 Mídia 3: Fotografia -->
+                <div class="snap-center shrink-0 w-full h-64 relative">
+                    <img src="Gado BRavo.jpg" alt="Gado Bravo" class="w-full h-full object-cover">
+                                </div>
+            </div>
+            <!-- Dica visual para o usuário saber que pode arrastar -->
+            <div class="bg-gray-100 text-center text-xs text-gray-500 py-1 border-b border-gray-200">
+                Deslize para ver mais mídias ↔
+            </div>
+            
+            <div class="p-6">
+                <div class="flex items-center space-x-2 text-sm text-eco-earth font-semibold mb-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    <span>Senhor do Bonfim, BA</span>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Gado Bravo</h4>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                    Um percurso imersivo pela mata nativa da Chapada Norte que recompensa o caminhante com quedas d'água e poços ideais para banho. Ideal para quem busca contato direto com a biodiversidade local, trilhas sombreadas e um refúgio refrescante em meio às serras. 
+                </p>
+
+                <!-- Botões de Ação (Rotas) -->
+                <div class="flex flex-col sm:flex-row gap-3 mt-4">
+                    <a href="https://www.google.com/maps/place/Serra+do+gado+bravo./@-10.4715229,-40.2709388,13z/data=!4m6!3m5!1s0x76d5f6ecb89702b:0x6ee9fc686d65b713!8m2!3d-10.4715397!4d-40.2379582!16s%2Fg%2F11ssfdylgf?entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="flex-1 flex justify-center items-center bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-xl font-medium transition shadow-sm">
+                        🚗 Como Chegar (Maps)
+                    </a>
+                    <a href="https://pt.wikiloc.com/trilhas-trekking/cachoeira-do-gado-bravo-101968330" target="_blank" class="flex-1 flex justify-center items-center bg-orange-500 hover:bg-orange-600 text-white py-3 px-4 rounded-xl font-medium transition shadow-sm">
+                        🥾 Rota a Pé (Wikiloc)
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Trilha 3: Serra da Maravilha -->
+        <article class="bg-white rounded-2xl shadow-lg overflow-hidden mb-10 border border-gray-100">
+            
+            <!-- Carrossel de Mídias (Fotos e Vídeos) -->
+            <div class="flex overflow-x-auto snap-x snap-mandatory bg-gray-900">
+                
+                <!-- Mídia 1: Primeira Foto -->
+                <div class="snap-center shrink-0 w-full h-64 relative">
+                    <img src="Captura de tela 2026-11-14 095947.png" alt="Vista da Serra da Maravilha" class="w-full h-full object-cover">
+                </div>
+                
+                <!-- Mídia 2: Segunda Foto -->
+                <div class="snap-center shrink-0 w-full h-64 relative">
+                    <img src="Maravilha.jpg" alt="Detalhe da trilha" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Mídia 3: Terceira Foto -->
+                <div class="snap-center shrink-0 w-full h-64 relative">
+                    <img src="Maravilha2.jpg" alt="Detalhe da trilha" class="w-full h-full object-cover">
+                </div>
+
+                </div>
+                
+            </div>
+            <!-- Dica visual para o usuário saber que pode arrastar -->
+            <div class="bg-gray-100 text-center text-xs text-gray-500 py-1 border-b border-gray-200">
+                Deslize para ver mais mídias ↔
+            </div>
+            
+            <div class="p-6">
+                <div class="flex items-center space-x-2 text-sm text-eco-earth font-semibold mb-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    <span>Senhor do Bonfim, BA</span>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Serra da Maravilha</h4>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                    Uma imersão na natureza exuberante da Chapada Norte. Esta trilha oferece um trajeto cercado pela flora nativa da Caatinga e áreas de transição. Ideal para quem busca tranquilidade, observação da fauna e flora local e uma bela paisagem ao fim do percurso.
+                </p>
+
+                <!-- Botões de Ação (Rotas) -->
+                <div class="flex flex-col sm:flex-row gap-3 mt-4">
+                    <a href="https://www.google.com/maps/place/Igrejinha+Serra+Maravilha/@-10.4419098,-40.2278065,18z/data=!4m6!3m5!1s0x76d58cb2e532b7f:0xa04dcf0181debd77!8m2!3d-10.4419095!4d-40.2267287!16s%2Fg%2F11c30zsn1g?entry=ttu&g_ep=EgoyMDI2MTExMC4wIKXMDSoASAFQAw%3D%3D"
+                     target="_blank" class="flex-1 flex justify-center items-center bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-xl font-medium transition shadow-sm">
+                        🚗 Como Chegar (Maps)
+                    </a>
+                    <a href="https://pt.wikiloc.com/trilhas-trekking/trilha-serra-da-maravilha-218988540" target="_blank" class="flex-1 flex justify-center items-center bg-orange-500 hover:bg-orange-600 text-white py-3 px-4 rounded-xl font-medium transition shadow-sm">
+                        🥾 Rota a Pé (Wikiloc)
+                    </a>
+                </div>
+            </div>
+        </article>
+     <    <!-- Trilha 7 quedas -->
+        <article class="bg-white rounded-2xl shadow-lg overflow-hidden mb-10 border border-gray-100">
+            
+            <!-- Carrossel de Mídias -->
+            <div class="flex overflow-x-auto snap-x snap-mandatory bg-gray-900">
+                                            
+
+                       <!-- Mídia 2: Fotografia -->
+                <div class="snap-center shrink-0 w-full h-64 relative">
+                    <img src="gabrimour4.github.io-main/7q4.jpeg" alt="7 Quedas" class="w-full h-full object-cover">
+                                </div>
+                                
+                       <!-- Mídia 3: Fotografia -->
+                <div class="snap-center shrink-0 w-full h-64 relative">
+                    <img src="gabrimour4.github.io-main/7q3.jpeg" alt="7 Quedas" class="w-full h-full object-cover">
+                                </div>
+                
+                
+            </div>
+            <!-- Dica visual para o usuário saber que pode arrastar -->
+            <div class="bg-gray-100 text-center text-xs text-gray-500 py-1 border-b border-gray-200">
+                Deslize para ver mais mídias ↔
+            </div>
+            
+            <div class="p-6">
+                <div class="flex items-center space-x-2 text-sm text-eco-earth font-semibold mb-2">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                    <span>Lutanda, Pindobaçu, BA
+                    </span>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Cachoeira das 7 Quedas</h4>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                   om sequências de quedas d'água cristalinas que cortam os paredões rochosos da Chapada Norte, este roteiro mistura aventura e contemplação. Uma trilha cercada pela mata nativa que recompensa o trilheiro com poços refrescantes e um cenário natural inesquecível.
+                </p>
+
+                <!-- Botões de Ação (Rotas) -->
+                <div class="flex flex-col sm:flex-row gap-3 mt-4">
+                    <a href="https://www.google.com/maps/place/Cachoeira+das+7+Quedas/@-10.4685185,-40.4888473,10z/data=!4m10!1m2!2m1!1s7+quedas!3m6!1s0x76d6b303c2edcf3:0x556a9a9046f6a84e!8m2!3d-10.6583684!4d-40.3695782!15sCgg3IHF1ZWRhc5IBF2FkdmVudHVyZV9zcG9ydHNfY2VudGVy4AEA!16s%2Fg%2F11hyxqtdlh?entry=ttu&g_ep=EgoyMDI2MTExNi4wIKXMDSoASAFQAw%3D%3D
+                    "" target="_blank" class="flex-1 flex justify-center items-center bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-xl font-medium transition shadow-sm">
+                        🚗 Como Chegar (Maps)
+                    </a>
+                    <a href="https://pt.wikiloc.com/trilhas-trekking/pindobacu-ba-vila-lutanda-serra-da-fumaca-273310672" target="_blank" class="flex-1 flex justify-center items-center bg-orange-500 hover:bg-orange-600 text-white py-3 px-4 rounded-xl font-medium transition shadow-sm">
+                        🥾 Rota a Pé (Wikiloc)
+                    </a>
+                </div>
+
+    </main>
+
+ <!-- Rodapé -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-8">
+        <div class="max-w-4xl mx-auto px-4 space-y-2">
+            <p class="text-white font-bold text-base">Projeto Nas Trilhas do Piemonte</p>
+            <p class="text-sm">
+                Por: Gabriel Moura, Allan Farias e Thayná Anonacio<br>
+                Sob orientação de Jilson França e Elidinaldo Leite
+            </p>
+            <div class="pt-4 border-t border-gray-800 text-xs text-gray-500">
+                <p>Fomentando o Ecoturismo na Chapada Norte - Bahia</p>
+                <p class="mt-1">Developed by: Gabri M.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
